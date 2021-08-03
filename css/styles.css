@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* COLORS */
+    /* Primary */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+
+    --bigShouldersFamily: 'Big Shoulders Display', cursive;
+    --lexendDecaFamily: 'Lexend Deca', sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--veryLightGray);
+    font-size: 15px;
+    font-family: var(--lexendDecaFamily);
+}
+
+h1, h2 {
+    font-family: var(--bigShouldersFamily);
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.618;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cards {
+    margin: 4rem 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 3.5rem;
+    color: var(--transparentWhite);
+}
+
+.card--sedans {
+    background-color: var(--brightOrange);
+}
+
+.card--suvs {
+    background-color: var(--darkCyan);
+}
+
+.card--luxury {
+    background-color: var(--veryDarkCyan);
+}
+
+.card__icon {
+    width: 50px;
+    margin-bottom: 1.6rem;
+}
+
+.card__title {
+    color: var(--veryLightGray);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.card__paragraph {
+    margin-bottom: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--veryLightGray);
+    color: var(--veryLightGray);
+    border: 2px solid var(--veryLightGray);
+    outline: none;
+    border-radius: 2rem;
+    padding: 0.75rem 1.6rem;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-sedans {
+    color: var(--brightOrange);
+}
+
+.btn-suvs {
+    color: var(--darkCyan);
+}
+
+.btn-luxury {
+    color: var(--veryDarkCyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--veryLightGray);
+}
