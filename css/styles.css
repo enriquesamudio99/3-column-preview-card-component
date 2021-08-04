@@ -26,6 +26,15 @@ body {
     font-family: var(--lexendDecaFamily);
 }
 
+@media (min-width: 1200px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 h1, h2 {
     font-family: var(--bigShouldersFamily);
     margin: 0;
@@ -44,6 +53,14 @@ a {
     margin: 4rem 1rem;
     border-radius: .5rem;
     overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 900px;
+    }
 }
 
 .card {
@@ -68,6 +85,12 @@ a {
     margin-bottom: 1.6rem;
 }
 
+@media (min-width: 1200px) {
+    .card__icon {
+        width: 60px;
+    }
+}
+
 .card__title {
     color: var(--veryLightGray);
     text-transform: uppercase;
@@ -77,6 +100,13 @@ a {
 
 .card__paragraph {
     margin-bottom: 1.6rem;
+}
+
+
+@media (min-width: 1200px) {
+    .card__paragraph {
+        margin-bottom: 5rem;
+    }
 }
 
 .btn {
